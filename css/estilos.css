@@ -1,0 +1,372 @@
+/*Características generals*/
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*El espacio de la cabecera*/
+#cabecera{
+  width: 100%;
+  overflow: hidden;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+/*Título de la página*/
+#cabecera h1 {
+  width: 55%;
+  color: white;
+  -webkit-float: left;
+  -moz-float: left;
+  -o-float: left;
+  -ms-float: left;
+  float: left;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  padding-left: 20px;
+}
+
+/*Catacterísticas del menú de páginas web*/
+#cabecera .menu{
+  width: 35%;
+  max-width: 1000px;
+  -webkit-float: right;
+  -moz-float: right;
+  -o-float: right;
+  -ms-float: right;
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+}
+
+header nav .menu{
+  -webkit-float: right;
+  -moz-float: right;
+  -o-float: right;
+  -ms-float: right;
+  float: right;
+  line-height: 50px;
+}
+
+header nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 25px 20px;
+  font-size: 20px;
+  line-height: normal;
+  -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+/*Efecto del menú*/
+header nav a:hover{
+  background: #f56f3a;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/*Opción de la página donde se está*/
+.inicio {
+    text-decoration: none;
+}
+
+/*Index.html - Características de la imagen central*/
+.imagen-central{
+  background-color: #82c3a6;
+  width: 100%;
+
+}
+
+.imagen-central img{
+  width: 40%;
+  height: 40%;
+  box-shadow: 2px 2px #02010a;
+  display: -webkit-block;
+  display: -moz-block;
+  display: -o-block;
+  display: -ms-block;
+  display: block;
+  margin: auto;
+}
+
+/*Index.html Características de las dos imágenes secundarias*/
+.flex-secundaria{
+  background-color: #d5c75f;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.flex-secundaria a {
+    text-align: center;
+}
+
+.flex-secundaria img {
+  margin: 20px;
+  width: 70%;
+  height: 70%;
+  background-color: #d5c75f;
+}
+
+.imagen-sec1 a, .imagen-sec2  a {
+  font-size: 20px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.imagen-sec1 {
+  -webkit-float: left;
+  -moz-float: left;
+  -o-float: left;
+  -ms-float: left;
+  float: left;
+  width: 45%;
+}
+
+.imagen-sec1 img {
+  box-shadow: 2px 2px #02010a;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  -ms-transition: transform 1s;
+  transition: transform 1s;
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  -o-transition: box-shadow 1s;
+  -ms-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+
+.imagen-sec1 img:hover{
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+.imagen-sec2 {
+  -webkit-float: right;
+  -moz-float: right;
+  -o-float: right;
+  -ms-float: right;
+  float: right;
+  width: 45%;
+}
+
+.imagen-sec2 img {
+  box-shadow: 2px 2px #02010a;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  -ms-transition: transform 1s;
+  transition: transform 1s;
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  -o-transition: box-shadow 1s;
+  -ms-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+
+.imagen-sec2 img:hover{
+  -webkit-transform: translate(20px,-5px);
+  -moz-transform: translate(20px,-5px);
+  -o-transform: translate(20px,-5px);
+  -ms-transform: translate(20px,-5px);
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+.flex-secundaria:after {
+  content: "";
+  display: -webkit-table;
+  display: -moz-table;
+  display: -o-table;
+  display: -ms-table;
+  display: table;
+  clear: both;
+}
+
+/*Características del pie de página*/
+footer{
+  background-color: #C6d5c5;
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  -o-column-span: all;
+  -ms-column-span: all;
+  column-span: all;
+  width: 100%;
+
+}
+
+.cols .col {
+  -webkit-float: left;
+  -moz-float: left;
+  -o-float: left;
+  -ms-float: left;
+  float: left;
+  width: 22%;
+  padding: 10px 10px;
+}
+
+.cols:after{
+  content: "";
+  display: -webkit-table;
+  display: -moz-table;
+  display: -o-table;
+  display: -ms-table;
+  display: table;
+  clear: both;
+}
+
+.col img {
+  width: 8%;
+  height: 8%;
+}
+
+/*Características de las 6 imágenes de las páginas de paisajes y retratos*/
+.imagenes {
+  background-color: #d5c75f;
+  width: 100%;
+  padding-top: 20px;
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  -o-column-span: all;
+  -ms-column-span: all;
+  column-span: all;
+  margin: auto;
+}
+
+.imagenes .imagen {
+  -webkit-float: left;
+  -moz-float: left;
+  -o-float: left;
+  -ms-float: left;
+  float: left;
+  width: 33%;
+}
+
+.imagenes .imagen img {
+  width: 80%;
+  height: 80%;
+  margin: 0px 0px 20px 20px;
+  box-shadow: 2px 2px #02010a;
+  display: -webkit-block;
+  display: -moz-block;
+  display: -o-block;
+  display: -ms-block;
+  display: block;
+}
+
+.imagen01 {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter:blur(10px);
+}
+
+.imagen02, .imagen04, .imagen06 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.imagen03 {
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+/*Características en los móbiles*/
+@media screen and (max-width: 900px) {
+    #cabecera .menu{
+      width: 100%;
+      text-align: center;
+    }
+
+    .imagen-central img{
+      width: 70%;
+      height: 70%;
+    }
+
+    .flex-secundaria .imagen-sec2, .flex-secundaria .imagen-sec1{
+      width: 100%;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+    }
+
+    .flex-secundaria img {
+      display: -webkit-block;
+      display: -moz-block;
+      display: -o-block;
+      display: -ms-block;
+      display: block;
+      margin: auto;
+    }
+
+      .imagen01  {
+        order: 1;
+      }
+      .imagen02  {
+        order: 2;
+      }
+      .imagen03  {
+        order: 3;
+      }
+      .imagen04  {
+        order: 4;
+      }
+      .imagen05  {
+        order: 5;
+      }
+      .imagen06 {
+        order: 6;
+      }
+
+    .imagenes .imagen {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .imagenes .imagen img {
+      display: -webkit-block;
+      display: -moz-block;
+      display: -o-block;
+      display: -ms-block;
+      display: block;
+      margin: auto;
+      margin: 0px 0px 20px 20px;
+    }
+
+    .cols .col {
+      width: 100%;
+      padding: 0px 20px;
+    }
+}
